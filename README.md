@@ -2,7 +2,9 @@
 
 ## Introduction
 
-Welcome to Module 3 Project! In this project, you will practice using "vanilla" JavaScript to manipulate the DOM. Your goal is to flesh out a page using JavaScript. This time, you will package your DOM-manipulation code inside of functions for easy re-usability.
+Welcome to Module 3 Project! In this project, you will practice using "vanilla" JavaScript to manipulate the DOM. Your goal is to flesh out a page using JavaScript.
+
+This time, you will package your DOM manipulations inside of functions (components!) for easy re-usability.
 
 To successfully complete this project, you will need the following technical skills:
 
@@ -11,6 +13,7 @@ To successfully complete this project, you will need the following technical ski
 1. **Manipulating class names and text** content of elements.
 1. **Creating listeners** for click events and keyboard events.
 1. **Creating functions** that return DOM elements.
+1. **Looping over data** and use a component at each iteration.
 
 In addition to these technical skills, the following soft skills will greatly impact your performance:
 
@@ -49,16 +52,16 @@ As a front-end engineer, your focus is mainly on the files that load **on the us
 Hey! Let's make sure you're up to speed with your **action items so far**.
 
 - [x] The app is installed on your machine, with both `start` and `test` scripts running in terminals.
-- [x] You studied the [mock](https://bloominstituteoftechnology.github.io/W_U2_S5M3_module_project/), and saw it loading different content at every reload.
+- [x] You studied the [mock](https://bloominstituteoftechnology.github.io/W_U2_S5M3_module_project/).
 - [x] You loaded your app in `http://localhost:3003`.
 
-Awesome! As you complete your tasks, tests will start passing in the terminal. **Do not stop until all tests are in the green!**
+Awesome! As you complete your tasks, tests will start passing in the terminal. Make sure the rendered texts match the mock exactly. **Do not stop until all tests are in the green!**
 
 If you look inside the `frontend` folder you will notice it contains, among other assets, an `index.js` script. If you inspect the head element of the `index.html` document, you will find the script loading there.
 
 **Let's discuss `index.js` and the tasks you need to complete inside that script. You are not allowed to modify any other files.**
 
-Have fun, and reach out to Staff if you get too stuck!
+Have fun, and reach out to Staff members if you get too stuck!
 
 #### 👉 TASK 1 - Write a `buildNav` component that returns a nav
 
@@ -101,13 +104,13 @@ See below an example of a return value of `buildNav`:
 
 This task has too parts **2A** and **2B**:
 
-- 2A is concerned with **writing a function** `buildLearnerCard` that returns a single learner card.
+- 2A is concerned with **implementing a function** `buildLearnerCard` that returns a single learner card.
 - 2B is concerned with **utilizing the function** to create the learner cards and attaching them to the DOM.
 
-**You will need to tackle 2A and 2B in parallel in the beginning:**
+**You will need to tackle 2A and 2B in parallel at the beginning:**
 
-1. Begin 2A by stubbing out a simple card and returning a `<div>WIP</div>` element from `buildLearnerCard`.
-2. Switch to 2B and loop over the `learners` array of data.
+1. Begin **2A** by stubbing out a simple card by returning a `<div>WIP</div>` element from `buildLearnerCard`.
+2. Switch to **2B** and loop over the `learners` array of data.
 3. At each **iteration** of the loop generate a learner card using `buildLearnerCard`:
 
     - The first argument `buildLearnerCard` expects is the learner of interest in the current iteration of the loop.
@@ -115,7 +118,7 @@ This task has too parts **2A** and **2B**:
 
 4. Also at each **iteration** of the loop you need to append the card to the `section` element inside the HTML.
 5. Reload Chrome and see all your "WIPs" rendering inside the `section` element, one per learner.
-6. Turn back to part 2A and implement the function so that the structure returned from it looks like the following example:
+6. Turn back to part **2A** and implement the function so that the structure returned from it looks like the following example:
 
     ```html
     <div class="learner-card">
@@ -189,6 +192,13 @@ Create the necessary code so that clicking on the `<section>` anywhere _outside 
 ## FAQ
 
 <details>
+  <summary>I feel very stuck. What can I do?</summary>
+
+Check out the Solution Video for this project in your learning platform. In it, an industry expert will walk you through their thinking in detail while they solve the tasks. The Solution Videos are highly recommended even if you are not stuck: you will learn lots of tricks.
+
+</details>
+
+<details>
   <summary>I am getting errors when I run npm install or npm start. What is going on?</summary>
 
 This project requires Node correctly installed on your computer in order to work. Your learning materials should have covered installation of Node. Sometimes Node can be installed but mis-configured. You can try executing `npm run fixit` (check `package.json` to see what this does), but if Node errors are recurrent, it indicates something is wrong with your machine or configuration, in which case you should request assistance from Staff.
@@ -233,7 +243,7 @@ Execute `npm test` in your terminal. If a particular test is giving you grief, d
 <details>
   <summary>I believe my code is correct and the test is wrong. What do I do?</summary>
 
-On occasion the test runner will get stuck. Use CTRL-C to kill the tests, and then `npm test` to launch them again. Try to reproduce the problem the test is complaining about by interacting with the site in Chrome, and do not code "to make the test happy". Code so that **your app does exactly what the mock does**. The tests are there for confirmation. Although it's possible that a particular test be flawed, statistically it's more likely that the bug is in your own code. If the problem persists, please request assistance from Staff.
+On occasion the test runner will get stuck. Use CTRL-C to kill the tests, and then `npm test` to launch them again. Try to reproduce the problem the test is complaining about by interacting with the site in Chrome, and do not code "to make the test happy". Code so that **your app does exactly what the mock does**. The tests are there for confirmation. Although it's possible that a particular test be flawed, statistically it's more likely that the bug is in your own code. Check all your texts to make sure they match the mock exactly! If the problem persists, please request assistance from Staff.
 
 </details>
 
