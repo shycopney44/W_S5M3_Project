@@ -144,104 +144,43 @@ This task has too parts **2A** and **2B**:
 
   ---
 
-This task is more tedious but more straightforward than TASK 2. You will 
+This task is more tedious but more straightforward than TASK 2! Implement the `buildFooter` function:
+
+  1. It takes an object as its only argument, containing all the data needed to build the footer.
+  2. The function returns a fully-built footer.
+
+See below an example of a return value of `buildNav`:
 
 ```html
-
+  <footer>
+    <div class="company-info">
+      <p class="company-name">Bloom Institute of Technology</p>
+      <p class="address">123 Main Street, City, Country</p>
+      <p class="contact-email">Email: <a href="mailto:info@example.com"> info@example.com</a></p>
+    </div>
+    <div class="social-media">
+      <a href="https://twitter.com/example">Twitter</a>
+      <a href="https://www.facebook.com/example">Facebook</a>
+      <a href="https://www.instagram.com/example">Instagram</a>
+    </div>
+    <div>© BLOOM INSTITUTE OF TECHNOLOGY 2023</div>
+  </footer>
 ```
 
-❗ After the `buildNav` function declaration you will find the function being used to create a nav and attach it to the DOM.
+❗ After the `buildFooter` function declaration you will find the function being used to create a nav and attach it to the DOM.
 
   ---
 
 </details>
 
-#### 👉 TASK 4 - Build a "Countdown" widget
+#### 👉 TASK 4 - Clicking on the section should deactivate the active card
 
 <details>
   <summary>Click to read</summary>
 
   ---
 
-- This widget on page load displays "T-minus 5...".
-- 1000 milliseconds later, it should display  "T-minus 4..."
-- 1000 milliseconds later, it should display  "T-minus 3..."
-- 1000 milliseconds later, it should display  "T-minus 2..."
-- 1000 milliseconds later, it should display  "T-minus 1..."
-- 1000 milliseconds later, it should display  "Liftoff! 🚀"
-
-You will need `setInterval` and optionally `clearInterval` (research this!). The DOM after 3000 milliseconds should look like so:
-
-```html
-<div class="countdown widget">
-  <h3>Countdown</h3>
-  <p>T-minus 2...</p>
-</div>
-```
-
-  ---
-
-</details>
-
-#### 👉 TASK 5 - Build a "Friends" widget
-
-<details>
-  <summary>Click to read</summary>
-
-  ---
-
-Select a random person from the `people` array in `data.js`, using `Math.random` for this.
-
-Each person has, among other attributes, a `friends` array containing the IDs of some buddies, who also happen to be persons inside the `people` array.
-
-Use the random person to construct DOM in the following format:
-
-```html
-<div class="friends widget">
-  <h3>Friends</h3>
-  <p>Michael Chen was born in 1995 and is friends with Carlos Garcia, Mohammed Ali and Jason Wong.</p>
-</div>
-```
-
-Note how the string is formatted, taking careful note of punctuation and proper placement of the "and" before the last friend.
-
-The friends mentioned in the p tag come from the `friends` property of the randomly selected person.
-
-In the example above, Carlos Garcia, Mohammed Ali and Jason Wong are the people who correspond to the IDs inside Michael Chen's `friends` array.
-
-If the person is unlucky enough not to have any friends inside their `friends` property, the paragraph renders to the DOM like so:
-
-```html
-<p>Luis Gonzalez was born in 1990 and has no friends.</p>
-```
-
-  ---
-
-</details>
-
-#### 👉 Task 6 Add tab indices to widgets
-
-<details>
-  <summary>Click to read</summary>
-
-  ---
-
-We need to be able to tab between widgets using the Tab key, which helps make the site more accessible.
-
-In order to do this, select the first widget from the DOM and add give it a `tabindex` attribute of "1".
-
-The second one should have a `tabindex` of "2" and so on. Here is what the Countdown widget would look like as an example:
-
-```html
-<div class="countdown widget" tabindex="3">
-  <h3>Countdown</h3>
-  <p>Liftoff! 🚀</p>
-</div>
-```
-
-  ---
-
-</details>
+Create the necessary code so that clicking on the `<section>` anywhere _outside of a car_ deactivates the active card if any. See this functionality in action in the mock.
 
   ---
 
