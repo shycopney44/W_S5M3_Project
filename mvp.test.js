@@ -21,9 +21,7 @@ beforeEach(() => {
 describe('Sprint 5 Module 3', () => {
   test('sanity', () => {
     screen.getByText('Kenneth Fisher')
-  })
-  test('sanity', () => {
-    expect(screen.queryByText('Learner ID: 24').clientHeight).toBeFalsy()
+    screen.debug()
   })
   // describe('Task 1 - Class name of widget', () => {
   //   test('👉 [1] All 4 widgets have a "widget" class name', () => {

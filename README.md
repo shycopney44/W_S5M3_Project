@@ -55,13 +55,15 @@ Hey! Let's make sure you're up to speed with your **action items so far**.
 - [x] You studied the [mock](https://bloominstituteoftechnology.github.io/W_U2_S5M3_module_project/).
 - [x] You loaded your app in `http://localhost:3003`.
 
-Awesome! As you complete your tasks, tests will start passing in the terminal. Make sure the rendered texts match the mock exactly. **Do not stop until all tests are in the green!**
+Awesome! As you complete tasks, tests will start passing.
 
-If you look inside the `frontend` folder you will notice it contains, among other assets, an `index.js` script. If you inspect the head element of the `index.html` document, you will find the script loading there.
+**These tests are not exhaustive** but more like "smoke tests" that look for obvious breakage. Use your attention-to-detail skills to ensure that your site matches the look and behavior of the mock exactly.
 
-**Let's discuss `index.js` and the tasks you need to complete inside that script. You are not allowed to modify any other files.**
+Inside the `frontend` folder there is, among other assets, an `index.js` script. If you inspect the head element of the `index.html` document, you will see the script loading there.
 
-Have fun, and reach out to Staff members if you get too stuck!
+**Let's discuss `index.js` and the tasks you need to complete inside it. You are not allowed to modify any other files.**
+
+Have fun, and check out the Solution Video of this project, if you get too stuck!
 
 #### 👉 TASK 1 - Write a `buildNav` component that returns a nav
 
@@ -89,7 +91,7 @@ See below an example of a return value of `buildNav`, depending on the data pass
 </nav>
 ```
 
-❗ After the `buildNav` function declaration you will find the function being used to create a nav and attach it to the DOM.
+❗ After the `buildNav` function declaration you will see the function being used to create a nav and attach it to the DOM.
 
   ---
 
