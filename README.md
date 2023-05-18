@@ -77,7 +77,7 @@ Implement the `buildNav` function:
   3. Each object in the array contains the data needed to construct a single anchor tag inside the nav.
   4. Each object contains `href`, `textContent` and `title` properties.
 
-See below an example of a return value of `buildNav`:
+See below an example of a return value of `buildNav`, depending on the data passed into it:
 
 ```html
 <nav>
@@ -129,7 +129,7 @@ This task has too parts **2A** and **2B**:
     </div>
     ```
 
-    ❗ Note that because of the styles applied in `styles.css`, some paragraphs will be hidden from view and you will have to find them in Chrome Dev Tools!
+    ❗ Note that because of the styles applied in `styles.css`, some paragraphs will be hidden from view and you will have use Dev Tools to see them!
 
 7. **To make the cards behave like the ones in the mock**, inside `buildLearnerCard` add a listener for click events on the card that does the following:
 
@@ -151,8 +151,9 @@ This task is more tedious but more straightforward than TASK 2! Implement the `b
 
   1. It takes an object as its only argument, containing all the data needed to build the footer.
   2. The function returns a fully-built footer.
+  3. Make sure that the email link works correctly and attempts to open an email client when clicked.
 
-See below an example of a return value of `buildNav`:
+See below an example of a possible return value of `buildNav`, depending on the data passed into it:
 
 ```html
   <footer>
