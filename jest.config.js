@@ -132,9 +132,9 @@ module.exports = {
   // runner: "jest-runner",
 
   // The paths to modules that run some code to configure or set up the testing environment before each test
-  "setupFiles": [
-    "./jest.globals.js"
-  ],
+  // "setupFiles": [
+  //   "./jest.globals.js"
+  // ],
 
   // A list of paths to modules that run some code to configure or set up the testing framework before each test
   // setupFilesAfterEnv: [],
@@ -152,6 +152,36 @@ module.exports = {
   testEnvironmentOptions: {
     resources: 'usable',
     runScripts: 'dangerously',
+    html:
+`
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Sprint 5 Module 1 Project</title>
+  <style>
+    .learner-card p:not(:first-child) {
+      transform: scale(0);
+    }
+    .learner-card.active p {
+      transform: scale(1);
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Sprint 5 Module 3 Project</h1>
+    <h2>Components</h2>
+    <p class="info">Click on a Learner to see more info...</p>
+  </header>
+  <section>
+  </section>
+</body>
+
+</html>
+`
   },
 
   // Adds a location field to test results
