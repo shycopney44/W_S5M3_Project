@@ -186,7 +186,7 @@ See below an example of a possible return value of `buildNav`, depending on the 
 
   ---
 
-Create the necessary code so that clicking on the `<section>` anywhere _outside of a car_ deactivates the active card if any. See this functionality in action in the mock.
+Create the necessary code so that clicking on the `<section>` anywhere _outside of a card_ deactivates the active card if any. See this functionality in action in the mock.
 
   ---
 
