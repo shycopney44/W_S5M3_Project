@@ -1,16 +1,12 @@
 function moduleProject3() {
 
   // 👉 TASK 1 - Write a `buildNav` component that returns a nav
-  // 👉 TASK 1 - Write a `buildNav` component that returns a nav
-  // 👉 TASK 1 - Write a `buildNav` component that returns a nav
 
   function buildNav(links) {
     //  ✨ do your magic here
     return document.createElement('nav')
   }
 
-  // ❗ DOM creation using your `buildNav` component (do not change):
-  // ❗ DOM creation using your `buildNav` component (do not change):
   // ❗ DOM creation using your `buildNav` component (do not change):
   document.querySelector('header').appendChild(buildNav([
     { href: 'https://www.example.com', textContent: 'Home', title: 'Go to the home page' },
@@ -21,16 +17,12 @@ function moduleProject3() {
   ]))
 
   // 👉 TASK 2A - Write a `buildLearnerCard` component that returns a card
-  // 👉 TASK 2A - Write a `buildLearnerCard` component that returns a card
-  // 👉 TASK 2A - Write a `buildLearnerCard` component that returns a card
 
   function buildLearnerCard(learner, languages) {
     //  ✨ do your magic here
   }
 
   {
-    // 👉 TASK 2B - Use the two variables below to make learner Cards, and put them in the DOM
-    // 👉 TASK 2B - Use the two variables below to make learner Cards, and put them in the DOM
     // 👉 TASK 2B - Use the two variables below to make learner Cards, and put them in the DOM
 
     let languages = [
@@ -60,8 +52,6 @@ function moduleProject3() {
   }
 
   // ❗ DOM creation using your `buildFooter` component (do not change):
-  // ❗ DOM creation using your `buildFooter` component (do not change):
-  // ❗ DOM creation using your `buildFooter` component (do not change):
   document.body.appendChild(buildFooter({
     companyName: 'Bloom Institute of Technology',
     address: '123 Main Street, City, Country',
@@ -73,8 +63,6 @@ function moduleProject3() {
     },
   }))
 
-  // 👉 TASK 4 - Clicking on the section should deactivate the active card
-  // 👉 TASK 4 - Clicking on the section should deactivate the active card
   // 👉 TASK 4 - Clicking on the section should deactivate the active card
 
   //  ✨ do your magic here
