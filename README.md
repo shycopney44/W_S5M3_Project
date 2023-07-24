@@ -113,12 +113,12 @@ This task has too parts **2A** and **2B**:
 
 1. Begin **2A** by stubbing out a simple card by returning a `<div>WIP</div>` element from `buildLearnerCard`.
 2. Switch to **2B** and loop over the `learners` array of data.
-3. At each **iteration** of the loop generate a learner card using `buildLearnerCard`:
+3. At each **iteration** of the loop, generate a learner card using `buildLearnerCard`:
 
-    - The first argument `buildLearnerCard` expects is the learner of interest in the current iteration of the loop.
+    - The first argument `buildLearnerCard` is the learner of interest in the current iteration of the loop.
     - The second argument is the whole `languages` array.
 
-4. Also at each **iteration** of the loop you need to append the card to the `section` element inside the HTML.
+4. Also, at each **iteration** of the loop, you need to append the card to the `section` element inside the HTML.
 5. Reload Chrome and see all your "WIPs" rendering inside the `section` element, one per learner.
 6. Turn back to part **2A** and implement the function so that the structure returned from it looks like the following example:
 
@@ -153,7 +153,7 @@ This task is more tedious but more straightforward than TASK 2! Implement the `b
 
   1. It takes an object as its only argument, containing all the data needed to build the footer.
   2. The function returns a fully-built footer.
-  3. Make sure that the email link works correctly and attempts to open an email client when clicked.
+  3. Ensure the email link works correctly and attempts to open an email client when clicked.
 
 See below an example of a possible return value of `buildNav`, depending on the data passed into it:
 
@@ -204,7 +204,7 @@ Check out the Solution Video for this project in your learning platform. In it, 
 <details>
   <summary>I am getting errors when I run npm install or npm start. What is going on?</summary>
 
-This project requires Node correctly installed on your computer in order to work. Your learning materials should have covered installation of Node. Sometimes Node can be installed but mis-configured. You can try executing `npm run fixit` (check `package.json` to see what this does), but if Node errors are recurrent, it indicates something is wrong with your machine or configuration, in which case you should request assistance from Staff.
+This project requires Node to be correctly installed on your computer to work. Your learning materials should have covered the installation of Node. Sometimes Node can be installed but misconfigured. You can try executing `npm run fixit` (check `package.json` to see what this does), but if Node errors are recurrent, it indicates something is wrong with your machine or configuration, so you should request assistance from learner assistants.
 
 </details>
 
@@ -218,7 +218,7 @@ No. Everything you need should be installed already.
 <details>
   <summary>Why am I not allowed to edit the CSS file?</summary>
 
-The CSS is the domain of a different team, and in this particular project we're not supposed to touch it. Do not use inline styles to get around this limitation! It will only make the CSS team angry. And believe us, you want CSS specialists happy because they can write CSS twenty times faster than you.
+The CSS is the domain of a different team, and in this particular project we're not supposed to touch it. Do not use inline styles to get around this limitation.
 
 </details>
 
@@ -232,7 +232,9 @@ This particular part of the product is a Single Page Application, so the HTML is
 <details>
   <summary>My page does not work! How do I debug it?</summary>
 
-Save your changes, and reload the site in Chrome. If you have a syntax problem in your code, the app will print error messages in the Console. Focus on the first message. Place console logs right before the crash site (errors usually inform of the line number where the problem is originating) and see if your variables contain the data you think they do. If there are no errors but the page is not doing what it's supposed to, the debugging technique is similar: put console logs to ensure that the code you are working on is actually executing, and to check that all variables in the area hold the correct data.
+Save your changes and reload the site in Chrome. If your code has a syntax problem, the app will print error messages in the console. Focus on the first message. Place console logs right before the crash site (errors usually inform of the line number where the problem originates) and see if your variables contain the data you think they do.
+
+Suppose there are no errors, but the page is not doing what it should. In that case, the debugging technique is similar: put console logs to ensure that the code you are working on is executing and check that all variables in the area hold the correct data.
 
 </details>
 
@@ -260,7 +262,7 @@ If you need to disable all tests except the one you are focusing on, edit the `m
 <details>
   <summary>I messed up and want to start over! How do I do that?</summary>
 
-**Do NOT delete your repository from GitHub!** Instead, commit _frequently_ as you work. Make a commit whenever you achieve _anything_ and the app isn't crashing in Chrome. This in practice creates restore points you can use should you wreak havoc with your app. If you find yourself in a mess, use `git reset --hard` to simply discard all changes to your code since your last commit. If you are dead-set on restarting the challenge from scratch, you can do this with Git as well, but it is advised that you request assistance from Staff.
+Do NOT delete your repository from GitHub! Instead, commit frequently as you work. Make a commit whenever you achieve anything and the app isn't crashing in Chrome. This in practice creates restore points you can use should you wreak havoc with your app. If you find yourself in a mess, use git reset --hard to simply discard all changes to your code since your last commit. If you are dead-set on restarting the challenge from scratch, you can do this with Git as well, but it is advised that you request assistance from a learner assistant.
 
 </details>
 
@@ -274,7 +276,7 @@ Although a small, "old-fashioned" website might be made of just HTML, CSS and JS
 <details>
   <summary>Is this how web projects are normally organized?</summary>
 
-Web projects can be organized in a million ways, there aren't many standards. Some developers like the freedom, while others prefer to use opinionated frameworks, which can do a lot of magic but prescribe that folders and files be structured and named just so.
+Web projects can be organized in many ways and there aren't many standards. Some developers like the freedom, while others prefer to use opinionated frameworks, which can do a lot of magic but require folders and files be structured and named just so.
 
 </details>
 
