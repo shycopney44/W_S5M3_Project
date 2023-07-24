@@ -43,8 +43,6 @@ function moduleProject3() {
   }
 
   // 👉 TASK 3 - Write a `buildFooter` component that returns a footer
-  // 👉 TASK 3 - Write a `buildFooter` component that returns a footer
-  // 👉 TASK 3 - Write a `buildFooter` component that returns a footer
 
   function buildFooter(footerData) {
     //  ✨ do your magic here
