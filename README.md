@@ -25,9 +25,9 @@ In addition to these technical skills, the following soft skills will greatly im
 
 You have been given a take-home coding assessment as part of the hiring process for a Web Developer position. Your task is to flesh out parts of a website, using only JavaScript.
 
-To help you complete the task, two of your future team-members will provide you with instructions and advice. You can find a [detailed mock](https://bloominstituteoftechnology.github.io/W_U2_S5M3_module_project/) showing the desired end result.
+You can find a [detailed mock](https://bloominstituteoftechnology.github.io/W_U2_S5M3_module_project/) showing the desired end result.
 
-Make sure to carefully read and follow their instructions. Good luck!
+Make sure to carefully read and follow the instructions. Good luck!
 
 ### 💾 Setup
 
