@@ -1,14 +1,15 @@
-/*
+/**
  * For a detailed explanation regarding each configuration property, visit:
  * https://jestjs.io/docs/configuration
  */
 
-module.exports = {
+/** @type {import('jest').Config} */
+const config = {
   // All imported modules in your tests should be mocked automatically
   // automock: false,
 
   // Stop running tests after `n` failures
-  // bail: 1,
+  // bail: 0,
 
   // The directory where Jest should store its cached dependency information
   // cacheDirectory: "/private/var/folders/96/mtz831_d14j85kmn9jcn1mc40000gn/T/jest_dx",
@@ -132,9 +133,7 @@ module.exports = {
   // runner: "jest-runner",
 
   // The paths to modules that run some code to configure or set up the testing environment before each test
-  // "setupFiles": [
-  //   "./jest.globals.js"
-  // ],
+  // setupFiles: [],
 
   // A list of paths to modules that run some code to configure or set up the testing framework before each test
   // setupFilesAfterEnv: [],
@@ -228,3 +227,5 @@ module.exports = {
   // Whether to use watchman for file crawling
   // watchman: true,
 };
+
+module.exports = config;
